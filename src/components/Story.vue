@@ -388,13 +388,13 @@ export default {
   }
 
   .story-scenes {
-    height: auto;
+    height: 300px;
     margin-bottom: 30px;
   }
 
   .scene {
     padding: 25px 20px;
-    min-height: 350px;
+    min-height: 300px;
     border-radius: 20px;
   }
 
@@ -463,6 +463,10 @@ export default {
 
   .story-header h2 {
     font-size: 1.6rem;
+  }
+
+  .story-scenes {
+    height: 380px;
   }
 
   .scene {

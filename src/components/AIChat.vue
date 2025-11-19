@@ -219,7 +219,8 @@ export default {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  height: 750px;
+  min-height: 750px;
+  max-height: 90vh;
   animation: fadeIn 0.6s ease-out;
 }
 
@@ -513,7 +514,8 @@ export default {
 
 @media (max-width: 600px) {
   .chat-box {
-    height: 600px;
+    min-height: auto;
+    max-height: 85vh;
     padding: 20px;
   }
 
@@ -538,7 +540,8 @@ export default {
   }
 
   .chat-box {
-    height: 500px;
+    min-height: auto;
+    max-height: 85vh;
     padding: 15px;
     max-width: 100%;
   }
@@ -631,7 +634,8 @@ export default {
   }
 
   .chat-box {
-    height: 550px;
+    min-height: auto;
+    max-height: 88vh;
     padding: 18px;
   }
 
@@ -662,7 +666,8 @@ export default {
 /* Landscape orientation */
 @media (max-height: 500px) and (orientation: landscape) {
   .chat-box {
-    height: 350px;
+    min-height: auto;
+    max-height: 80vh;
     padding: 12px;
   }
 
