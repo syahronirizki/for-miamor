@@ -510,4 +510,230 @@ export default {
     font-size: 0.9rem;
   }
 }
+
+/* Extra small devices (320px - 480px) */
+@media (max-width: 480px) {
+  .birthday-container {
+    padding: 15px;
+    padding-top: 60px;
+  }
+
+  .btn-back {
+    top: 12px;
+    left: 12px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+
+  .celebration-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .cake-section {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    gap: 12px;
+  }
+
+  .candle {
+    font-size: 2rem;
+  }
+
+  .wishes-section {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 18px;
+  }
+
+  .wishes-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .wishes-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .wish-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .wish-emoji {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .wish-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .final-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 18px;
+  }
+
+  .love-quote {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .signature {
+    font-size: 0.9rem;
+  }
+
+  .heart-signature {
+    font-size: 0.9rem;
+  }
+
+  .sharing-section {
+    margin: 20px 0;
+  }
+
+  .sharing-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .share-buttons {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .share-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+  }
+
+  .action-buttons {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .btn-restart,
+  .btn-print {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    border-radius: 20px;
+  }
+
+  .confetti {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Small tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .birthday-container {
+    padding: 18px;
+  }
+
+  .celebration-title {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+  }
+
+  .cake-section {
+    font-size: 4.5rem;
+    gap: 15px;
+  }
+
+  .candle {
+    font-size: 2.5rem;
+  }
+
+  .wishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wish-card {
+    padding: 14px;
+  }
+
+  .wish-emoji {
+    font-size: 2rem;
+  }
+
+  .wish-card p {
+    font-size: 0.88rem;
+  }
+
+  .love-quote {
+    font-size: 1.05rem;
+  }
+
+  .share-btn {
+    padding: 9px 16px;
+    font-size: 0.87rem;
+  }
+
+  .btn-restart,
+  .btn-print {
+    padding: 11px 28px;
+    font-size: 0.92rem;
+  }
+}
+
+/* Landscape orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .birthday-container {
+    padding: 12px;
+    min-height: auto;
+  }
+
+  .btn-back {
+    top: 8px;
+    left: 8px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .celebration-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .cake-section {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+
+  .candle {
+    font-size: 1.5rem;
+  }
+
+  .wishes-section {
+    padding: 10px;
+    margin: 10px 0;
+    display: none;
+  }
+
+  .final-message {
+    padding: 10px;
+  }
+
+  .love-quote {
+    font-size: 0.85rem;
+  }
+
+  .sharing-section,
+  .action-buttons {
+    margin-top: 10px;
+  }
+
+  .share-btn,
+  .btn-restart,
+  .btn-print {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}
 </style>

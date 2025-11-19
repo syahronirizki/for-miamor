@@ -224,3 +224,81 @@ body {
   transform: translateY(-5px);
 }
 
+/* ========================================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ========================================= */
+
+/* Extra small devices (320px - 480px) */
+@media (max-width: 480px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  .btn-primary, .btn-secondary, .btn-success {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+  }
+}
+
+/* Small devices (481px - 768px) */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 15px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #app {
+    padding: 0;
+  }
+
+  .btn-primary, .btn-secondary, .btn-success {
+    padding: 11px 25px;
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+}
+
+/* Medium devices (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (1025px+) */
+@media (min-width: 1025px) {
+  html, body {
+    font-size: 17px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  #app {
+    min-height: auto;
+  }
+
+  body {
+    padding: 10px 0;
+  }
+}
+

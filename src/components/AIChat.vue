@@ -529,4 +529,177 @@ export default {
     font-size: 0.9rem;
   }
 }
+
+/* Extra small devices (320px - 480px) */
+@media (max-width: 480px) {
+  .btn-back-chat {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .chat-box {
+    height: 500px;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .chat-header {
+    margin-bottom: 10px;
+  }
+
+  .chat-header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+  }
+
+  .chat-header .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .messages-container {
+    gap: 8px;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .message {
+    gap: 6px;
+  }
+
+  .message-avatar {
+    font-size: 1.4rem;
+  }
+
+  .message-avatar.user {
+    font-size: 1.2rem;
+  }
+
+  .message-content {
+    max-width: 88%;
+    padding: 7px 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+  }
+
+  .message-time {
+    font-size: 0.7rem;
+  }
+
+  .spinner-small {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+  }
+
+  .question-options {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .question-options .options-label {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  .question-option-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .input-area {
+    padding: 10px;
+  }
+
+  .placeholder-text {
+    font-size: 0.8rem;
+  }
+
+  .btn-birthday {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .btn-back-chat {
+    padding: 9px 15px;
+    font-size: 0.85rem;
+  }
+
+  .chat-box {
+    height: 550px;
+    padding: 18px;
+  }
+
+  .chat-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .chat-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .message-content {
+    max-width: 88%;
+    font-size: 0.83rem;
+  }
+
+  .question-option-btn {
+    padding: 9px 11px;
+    font-size: 0.82rem;
+  }
+
+  .btn-birthday {
+    padding: 13px 32px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Landscape orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .chat-box {
+    height: 350px;
+    padding: 12px;
+  }
+
+  .chat-header {
+    margin-bottom: 8px;
+  }
+
+  .chat-header h2 {
+    font-size: 1rem;
+  }
+
+  .chat-header .subtitle {
+    font-size: 0.75rem;
+    display: none;
+  }
+
+  .messages-container {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .message-content {
+    max-width: 85%;
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .question-option-btn {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+    margin-top: 3px;
+  }
+
+  .btn-birthday {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+}
 </style>

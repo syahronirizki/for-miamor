@@ -367,4 +367,173 @@ export default {
     font-size: 0.9rem;
   }
 }
+
+/* Extra small devices (320px - 480px) */
+@media (max-width: 480px) {
+  .story-container {
+    padding: 15px;
+  }
+
+  .btn-back {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .story-header {
+    margin-bottom: 30px;
+  }
+
+  .story-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .story-scenes {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .scene {
+    padding: 25px 20px;
+    min-height: 350px;
+    border-radius: 20px;
+  }
+
+  .scene-image-large {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  .scene-header-small {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .scene-number {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .scene-emoji {
+    font-size: 1.2rem;
+  }
+
+  .scene h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .scene p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .progress-bar {
+    height: 2px;
+    margin-bottom: 20px;
+  }
+
+  .scene-navigation {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn-nav {
+    padding: 9px 15px;
+    font-size: 0.8rem;
+    flex: 1;
+  }
+
+  .scene-indicator {
+    font-size: 0.85rem;
+    min-width: 50px;
+  }
+
+  .btn-continue {
+    padding: 12px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+  }
+}
+
+/* Small tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .story-container {
+    padding: 18px;
+  }
+
+  .story-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .scene {
+    padding: 28px 22px;
+    min-height: 380px;
+  }
+
+  .scene-image-large {
+    font-size: 4.5rem;
+  }
+
+  .scene h3 {
+    font-size: 1.3rem;
+  }
+
+  .scene p {
+    font-size: 0.98rem;
+  }
+
+  .btn-nav {
+    padding: 10px 18px;
+    font-size: 0.88rem;
+  }
+}
+
+/* Landscape orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .story-container {
+    padding: 10px;
+  }
+
+  .story-header {
+    margin-bottom: 15px;
+  }
+
+  .story-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .story-scenes {
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .scene {
+    padding: 15px;
+    min-height: 250px;
+  }
+
+  .scene-image-large {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .scene h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .scene p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .btn-nav {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .scene-indicator {
+    font-size: 0.8rem;
+  }
+}
 </style>
