@@ -172,6 +172,7 @@ export default {
   position: relative;
   height: 450px;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .scene {
@@ -190,6 +191,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 100%;
 }
 
 .scene.active {
@@ -380,51 +382,52 @@ export default {
   }
 
   .story-header {
-    margin-bottom: 30px;
-  }
-
-  .story-header h2 {
-    font-size: 1.4rem;
-  }
-
-  .story-scenes {
-    height: 300px;
-    margin-bottom: 30px;
-  }
-
-  .scene {
-    padding: 25px 20px;
-    min-height: 300px;
-    border-radius: 20px;
-  }
-
-  .scene-image-large {
-    font-size: 3.5rem;
     margin-bottom: 20px;
   }
 
-  .scene-header-small {
-    gap: 12px;
+  .story-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .story-scenes {
+    height: 350px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+  }
+
+  .scene {
+    padding: 20px 15px;
+    min-height: 350px;
+    border-radius: 15px;
+  }
+
+  .scene-image-large {
+    font-size: 3rem;
     margin-bottom: 15px;
+  }
+
+  .scene-header-small {
+    gap: 10px;
+    margin-bottom: 12px;
   }
 
   .scene-number {
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
   }
 
   .scene-emoji {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .scene h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
 
   .scene p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 
   .progress-bar {
@@ -467,6 +470,7 @@ export default {
 
   .story-scenes {
     height: 380px;
+    overflow-y: auto;
   }
 
   .scene {
