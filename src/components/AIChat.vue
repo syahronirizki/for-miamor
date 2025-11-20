@@ -513,36 +513,108 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .btn-back-chat {
+    top: 12px;
+    left: 12px;
+    padding: 9px 15px;
+    font-size: 0.8rem;
+  }
+
   .chat-box {
     min-height: auto;
-    max-height: 85vh;
-    padding: 20px;
+    max-height: 90vh;
+    padding: 18px;
+  }
+
+  .chat-header {
+    text-align: center;
+    margin-bottom: 12px;
   }
 
   .chat-header h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+
+  .chat-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .messages-container {
+    gap: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .message {
+    gap: 8px;
+  }
+
+  .message-avatar {
+    font-size: 1.6rem;
+  }
+
+  .message-avatar.user {
+    font-size: 1.4rem;
   }
 
   .message-content {
-    max-width: 90%;
+    max-width: 88%;
+    padding: 8px 11px;
+    font-size: 0.88rem;
+    border-radius: 11px;
   }
 
-  .input-field {
+  .message-time {
+    font-size: 0.7rem;
+  }
+
+  .question-options {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+
+  .question-options .options-label {
+    font-size: 0.78rem;
+    margin-bottom: 8px;
+  }
+
+  .question-option-btn {
+    padding: 10px 11px;
+    font-size: 0.84rem;
+    margin-top: 6px;
+    border-radius: 8px;
+  }
+
+  .input-area {
+    padding: 12px;
+  }
+
+  .placeholder-text {
     font-size: 0.9rem;
+  }
+
+  .btn-birthday {
+    margin-top: 15px;
+    padding: 12px 28px;
+    font-size: 0.95rem;
   }
 }
 
 /* Extra small devices (320px - 480px) */
 @media (max-width: 480px) {
   .btn-back-chat {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    top: 10px;
+    left: 10px;
+    padding: 7px 11px;
+    font-size: 0.75rem;
   }
 
   .chat-box {
     min-height: auto;
-    max-height: 85vh;
-    padding: 15px;
+    max-height: 88vh;
+    padding: 14px;
     max-width: 100%;
   }
 
@@ -551,12 +623,12 @@ export default {
   }
 
   .chat-header h2 {
-    font-size: 1.1rem;
-    margin-bottom: 3px;
+    font-size: 1.15rem;
+    margin-bottom: 2px;
   }
 
   .chat-header .subtitle {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
 
   .messages-container {
@@ -570,141 +642,215 @@ export default {
   }
 
   .message-avatar {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .message-avatar.user {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .message-content {
-    max-width: 88%;
-    padding: 7px 10px;
+    max-width: 87%;
+    padding: 7px 9px;
     font-size: 0.8rem;
-    border-radius: 10px;
+    border-radius: 9px;
+    line-height: 1.35;
   }
 
   .message-time {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .spinner-small {
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-top: 2px solid white;
+    width: 18px;
+    height: 18px;
   }
 
   .question-options {
-    padding: 12px;
+    padding: 11px;
     margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   .question-options .options-label {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     margin-bottom: 6px;
   }
 
   .question-option-btn {
-    padding: 8px 10px;
-    font-size: 0.8rem;
+    padding: 8px 9px;
+    font-size: 0.78rem;
     margin-top: 5px;
+    border-radius: 7px;
+    line-height: 1.3;
   }
 
   .input-area {
     padding: 10px;
+    min-height: 45px;
   }
 
   .placeholder-text {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
 
   .btn-birthday {
-    margin-top: 15px;
-    padding: 12px 25px;
-    font-size: 0.9rem;
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
   }
 }
 
 /* Small tablets (481px - 768px) */
 @media (max-width: 768px) and (min-width: 481px) {
   .btn-back-chat {
-    padding: 9px 15px;
-    font-size: 0.85rem;
+    top: 12px;
+    left: 12px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
   }
 
   .chat-box {
     min-height: auto;
-    max-height: 88vh;
-    padding: 18px;
+    max-height: 90vh;
+    padding: 17px;
+  }
+
+  .chat-header {
+    margin-bottom: 11px;
   }
 
   .chat-header h2 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    margin-bottom: 3px;
   }
 
   .chat-header .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+  }
+
+  .messages-container {
+    gap: 9px;
+    padding: 7px;
+  }
+
+  .message-avatar {
+    font-size: 1.5rem;
+  }
+
+  .message-avatar.user {
+    font-size: 1.3rem;
   }
 
   .message-content {
     max-width: 88%;
+    padding: 8px 10px;
     font-size: 0.83rem;
+    line-height: 1.4;
+  }
+
+  .question-options {
+    padding: 12px;
+    border-radius: 11px;
+  }
+
+  .question-options .options-label {
+    font-size: 0.77rem;
+    margin-bottom: 7px;
   }
 
   .question-option-btn {
-    padding: 9px 11px;
-    font-size: 0.82rem;
+    padding: 9px 10px;
+    font-size: 0.81rem;
+    margin-top: 5px;
+    border-radius: 8px;
   }
 
   .btn-birthday {
-    padding: 13px 32px;
-    font-size: 0.95rem;
+    padding: 12px 30px;
+    font-size: 0.93rem;
   }
 }
 
 /* Landscape orientation */
 @media (max-height: 500px) and (orientation: landscape) {
+  .btn-back-chat {
+    top: 8px;
+    left: 8px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
   .chat-box {
     min-height: auto;
     max-height: 80vh;
-    padding: 12px;
+    padding: 11px;
   }
 
   .chat-header {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   .chat-header h2 {
     font-size: 1rem;
+    margin-bottom: 2px;
   }
 
   .chat-header .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     display: none;
   }
 
   .messages-container {
     gap: 6px;
+    padding: 5px;
     margin-bottom: 6px;
+    min-height: 250px;
+  }
+
+  .message-avatar {
+    font-size: 1.2rem;
+  }
+
+  .message-avatar.user {
+    font-size: 1rem;
   }
 
   .message-content {
     max-width: 85%;
     font-size: 0.75rem;
     padding: 5px 8px;
+    border-radius: 8px;
+    line-height: 1.3;
+  }
+
+  .message-time {
+    font-size: 0.6rem;
+  }
+
+  .question-options {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+  }
+
+  .question-options .options-label {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
   }
 
   .question-option-btn {
     padding: 6px 8px;
-    font-size: 0.75rem;
+    font-size: 0.73rem;
     margin-top: 3px;
+    border-radius: 6px;
+    line-height: 1.25;
   }
 
   .btn-birthday {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    margin-top: 10px;
+    padding: 9px 18px;
+    font-size: 0.78rem;
+    margin-top: 8px;
   }
 }
 </style>

@@ -336,132 +336,95 @@ export default {
 
 @media (max-width: 600px) {
   .story-container {
-    padding: 20px;
+    padding: 15px;
+  }
+
+  .btn-back {
+    top: 12px;
+    left: 12px;
+    padding: 9px 15px;
+    font-size: 0.85rem;
   }
 
   .story-header h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .story-scenes {
+    height: auto;
+    min-height: 380px;
+    margin-bottom: 25px;
+    overflow: visible;
   }
 
   .scene {
-    padding: 30px 25px;
-    min-height: 400px;
+    padding: 30px 20px;
+    min-height: 380px;
+    border-radius: 20px;
   }
 
   .scene-image-large {
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-bottom: 20px;
   }
 
   .scene h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
 
   .scene p {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .progress-bar {
+    height: 3px;
+    margin-bottom: 20px;
   }
 
   .scene-navigation {
     flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
   }
 
   .btn-nav {
-    padding: 10px 20px;
+    padding: 10px 18px;
     font-size: 0.9rem;
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .scene-indicator {
+    font-size: 0.95rem;
+  }
+
+  .btn-continue {
+    padding: 13px;
+    font-size: 1rem;
+    border-radius: 20px;
   }
 }
 
 /* Extra small devices (320px - 480px) */
 @media (max-width: 480px) {
   .story-container {
-    padding: 15px;
+    padding: 12px;
+    padding-top: 50px;
+    min-height: 100vh;
   }
 
   .btn-back {
-    padding: 10px 15px;
-    font-size: 0.85rem;
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
   }
 
   .story-header {
-    margin-bottom: 20px;
-  }
-
-  .story-header h2 {
-    font-size: 1.3rem;
-  }
-
-  .story-scenes {
-    height: 350px;
-    margin-bottom: 20px;
-    overflow-y: auto;
-  }
-
-  .scene {
-    padding: 20px 15px;
-    min-height: 350px;
-    border-radius: 15px;
-  }
-
-  .scene-image-large {
-    font-size: 3rem;
-    margin-bottom: 15px;
-  }
-
-  .scene-header-small {
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .scene-number {
-    font-size: 0.7rem;
-    letter-spacing: 0.3px;
-  }
-
-  .scene-emoji {
-    font-size: 1rem;
-  }
-
-  .scene h3 {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-  }
-
-  .scene p {
-    font-size: 0.85rem;
-    line-height: 1.5;
-  }
-
-  .progress-bar {
-    height: 2px;
-    margin-bottom: 20px;
-  }
-
-  .scene-navigation {
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .btn-nav {
-    padding: 9px 15px;
-    font-size: 0.8rem;
-    flex: 1;
-  }
-
-  .scene-indicator {
-    font-size: 0.85rem;
-    min-width: 50px;
-  }
-
-  .btn-continue {
-    padding: 12px;
-    font-size: 0.95rem;
-    border-radius: 20px;
-  }
-}
-
-/* Small tablets (481px - 768px) */
-@media (max-width: 768px) and (min-width: 481px) {
-  .story-container {
-    padding: 18px;
+    margin-bottom: 18px;
   }
 
   .story-header h2 {
@@ -469,79 +432,224 @@ export default {
   }
 
   .story-scenes {
-    height: 380px;
-    overflow-y: auto;
+    height: auto;
+    min-height: 340px;
+    margin-bottom: 18px;
+    overflow: visible;
   }
 
   .scene {
-    padding: 28px 22px;
-    min-height: 380px;
+    padding: 22px 15px;
+    min-height: 340px;
+    border-radius: 15px;
+  }
+
+  .scene-image-large {
+    font-size: 4rem;
+    margin-bottom: 12px;
+  }
+
+  .scene-header-small {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .scene-number {
+    font-size: 0.65rem;
+    letter-spacing: 0.2px;
+  }
+
+  .scene-emoji {
+    font-size: 1.2rem;
+  }
+
+  .scene h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .scene p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .progress-bar {
+    height: 2px;
+    margin-bottom: 15px;
+  }
+
+  .scene-navigation {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .btn-nav {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .scene-indicator {
+    font-size: 0.8rem;
+    min-width: 45px;
+  }
+
+  .btn-continue {
+    padding: 11px;
+    font-size: 0.9rem;
+    border-radius: 18px;
+  }
+}
+
+/* Small tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .story-container {
+    padding: 16px;
+  }
+
+  .btn-back {
+    top: 12px;
+    left: 12px;
+    padding: 9px 15px;
+    font-size: 0.82rem;
+  }
+
+  .story-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .story-scenes {
+    height: auto;
+    min-height: 370px;
+    margin-bottom: 25px;
+    overflow: visible;
+  }
+
+  .scene {
+    padding: 28px 20px;
+    min-height: 370px;
+    border-radius: 18px;
   }
 
   .scene-image-large {
     font-size: 4.5rem;
+    margin-bottom: 18px;
   }
 
   .scene h3 {
     font-size: 1.3rem;
+    margin-bottom: 12px;
   }
 
   .scene p {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
+    line-height: 1.55;
   }
 
   .btn-nav {
-    padding: 10px 18px;
-    font-size: 0.88rem;
+    padding: 10px 16px;
+    font-size: 0.87rem;
+  }
+
+  .scene-indicator {
+    font-size: 0.92rem;
+  }
+
+  .btn-continue {
+    padding: 12px;
+    font-size: 0.98rem;
   }
 }
 
 /* Landscape orientation */
 @media (max-height: 500px) and (orientation: landscape) {
   .story-container {
-    padding: 10px;
+    padding: 8px;
+    min-height: auto;
+  }
+
+  .btn-back {
+    top: 8px;
+    left: 8px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
   }
 
   .story-header {
-    margin-bottom: 15px;
-  }
-
-  .story-header h2 {
-    font-size: 1.2rem;
-  }
-
-  .story-scenes {
-    height: 250px;
-    margin-bottom: 15px;
-  }
-
-  .scene {
-    padding: 15px;
-    min-height: 250px;
-  }
-
-  .scene-image-large {
-    font-size: 2rem;
     margin-bottom: 10px;
   }
 
-  .scene h3 {
-    font-size: 1rem;
+  .story-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .story-scenes {
+    height: auto;
+    min-height: 260px;
+    margin-bottom: 12px;
+    overflow: visible;
+  }
+
+  .scene {
+    padding: 14px 12px;
+    min-height: 260px;
+    border-radius: 12px;
+  }
+
+  .scene-image-large {
+    font-size: 2.2rem;
     margin-bottom: 8px;
+  }
+
+  .scene-header-small {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .scene-number {
+    font-size: 0.6rem;
+  }
+
+  .scene-emoji {
+    font-size: 0.95rem;
+  }
+
+  .scene h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
   }
 
   .scene p {
     font-size: 0.8rem;
-    line-height: 1.4;
+    line-height: 1.35;
+  }
+
+  .progress-bar {
+    height: 2px;
+    margin-bottom: 10px;
+  }
+
+  .scene-navigation {
+    gap: 8px;
+    margin-bottom: 12px;
   }
 
   .btn-nav {
-    padding: 6px 12px;
-    font-size: 0.75rem;
+    padding: 5px 10px;
+    font-size: 0.7rem;
   }
 
   .scene-indicator {
+    font-size: 0.75rem;
+    min-width: 40px;
+  }
+
+  .btn-continue {
+    padding: 8px;
     font-size: 0.8rem;
+    border-radius: 15px;
   }
 }
 </style>

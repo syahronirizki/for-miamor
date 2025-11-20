@@ -235,96 +235,126 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .welcome-container {
+    padding: 15px;
+    min-height: 100vh;
+  }
+
   .title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .hearts-animation {
-    font-size: 2.5rem;
-    gap: 10px;
-  }
-
-  .btn-next {
-    padding: 14px 45px;
-    font-size: 1rem;
+    font-size: 3rem;
+    gap: 12px;
+    margin-bottom: 30px;
   }
 
   .features {
-    gap: 20px;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-next {
+    padding: 14px 50px;
+    font-size: 1rem;
   }
 }
 
 /* Extra small devices (320px - 480px) */
 @media (max-width: 480px) {
+  .welcome-container {
+    padding: 12px;
+    padding-top: 30px;
+    min-height: 100vh;
+  }
+
   .title {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
   }
 
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
   .message {
     font-size: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .description {
     font-size: 0.95rem;
-    margin-bottom: 25px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.4;
   }
 
   .hearts-animation {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     gap: 8px;
   }
 
   .features {
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 12px;
+    margin-bottom: 25px;
   }
 
   .feature-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .feature-text {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .btn-next {
-    padding: 12px 30px;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    padding: 11px 25px;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
   }
 
   .orb-1 {
-    width: 250px;
-    height: 250px;
-    top: -75px;
-    left: -75px;
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
   }
 
   .orb-2 {
-    width: 200px;
-    height: 200px;
-    bottom: -40px;
-    right: 30px;
+    width: 150px;
+    height: 150px;
+    bottom: -30px;
+    right: 20px;
   }
 
   .orb-3 {
-    width: 200px;
-    height: 200px;
-    right: -80px;
+    width: 150px;
+    height: 150px;
+    right: -60px;
   }
 }
 
@@ -360,29 +390,41 @@ export default {
 @media (max-height: 500px) and (orientation: landscape) {
   .welcome-container {
     min-height: auto;
-    padding: 15px 20px;
+    padding: 12px 20px;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
   }
 
   .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
   }
 
-  .message,
+  .message {
+    font-size: 1rem;
+  }
+
   .description {
-    display: none;
+    font-size: 0.95rem;
+    line-height: 1.3;
   }
 
   .features {
-    margin-bottom: 10px;
+    gap: 15px;
+    margin-bottom: 12px;
   }
 
   .hearts-animation {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 2rem;
+  }
+
+  .btn-next {
+    padding: 10px 30px;
+    font-size: 0.9rem;
   }
 }
 </style>

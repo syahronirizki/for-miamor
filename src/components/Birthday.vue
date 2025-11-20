@@ -631,11 +631,11 @@ export default {
   text-align: left;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
 }
 
 .timeline-item.active .timeline-content {
-  max-height: 200px;
+  max-height: 300px;
   background: rgba(255, 0, 110, 0.15);
   border-color: rgba(255, 0, 110, 0.3);
 }
@@ -828,6 +828,10 @@ export default {
     margin-left: 40px;
   }
 
+  .timeline-item.active .timeline-content {
+    max-height: 320px;
+  }
+
   .love-quote {
     font-size: 1.2rem;
   }
@@ -938,6 +942,10 @@ export default {
     width: calc(100% - 45px);
     padding: 15px;
     font-size: 0.9rem;
+  }
+
+  .timeline-item.active .timeline-content {
+    max-height: 300px;
   }
 
   .timeline-title {
@@ -1096,6 +1104,10 @@ export default {
     border-radius: 10px;
   }
 
+  .timeline-item.active .timeline-content {
+    max-height: 280px;
+  }
+
   .timeline-title {
     font-size: 0.9rem;
     margin-bottom: 5px;
@@ -1192,6 +1204,24 @@ export default {
   .wish-card p {
     font-size: 0.75rem;
     line-height: 1.2;
+  }
+
+  .timeline-content {
+    width: calc(100% - 40px);
+    padding: 8px;
+  }
+
+  .timeline-item.active .timeline-content {
+    max-height: 200px;
+  }
+
+  .timeline-title {
+    font-size: 0.8rem;
+  }
+
+  .timeline-text {
+    font-size: 0.75rem;
+    line-height: 1.3;
   }
 
   .special-message,
