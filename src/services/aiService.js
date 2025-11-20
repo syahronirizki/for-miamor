@@ -3,29 +3,29 @@
 
 const MESSAGE_OPTIONS = {
   love: [
-    "I love you because you're not just my partner, but my best friend. Even though distance separates us, you're always in my heart. Every call, every message brings you closer to me. You understand me in ways no one else ever could. Can't wait to hold you soon. ❤️",
-    "What makes me love you? It's knowing that no matter how many miles are between us, nothing can diminish what we have. Your love reaches me across every distance. And soon, very soon, I'll get to love you in person again. 💕",
-    "You want to know why I love you? Because when I'm with you virtually, I feel connected in the deepest way. You make every moment count, and I'm counting down the days until I can finally be by your side and never let go. ✨"
+    "I love you because you're not just my partner, but my best friend. Even though we're still in a long-distance relationship, you're always in my heart. Every call and message brings you closer to me. I can't wait for the day we finally meet in person — as soon as possible. ❤️",
+    "What makes me love you? Knowing that no amount of miles can diminish what we have. Even while we're apart, your love reaches me every day. I'm counting down until we can be together again, as soon as we possibly can. 💕",
+    "You want to know why I love you? Because even from afar you make my world brighter. These distance days only make me more certain that when we meet in person, it will be everything I've dreamed of — and I hope that happens as soon as possible. ✨"
   ],
   story: [
-    "Our story is one of my favorite things. From the moment we met, I knew you were worth the distance. Every chapter we write together - from our first kiss to this moment - means everything. And the best chapter is coming soon when we're finally together. 📖💕",
-    "I could tell you about the day we met, but what matters more is every day since, and the days to come. You've turned my life into the most beautiful story. Happy birthday to the love of my life - can't wait to celebrate many more in person. 🌹",
+    "Our story is one of my favorite things. From the moment we met I knew you were worth the distance. Every chapter we write together — including these long-distance days — means everything. The best chapter will be when we finally meet in person as soon as possible. 📖💕",
+    "I could tell you about the day we met, but what matters more are all the moments since, even the ones spent apart. You've turned my life into the most beautiful story, and I can't wait to continue it together the next time we're finally together in person. 🌹",
   ],
   funny: [
-    "You make me laugh so hard, even through a screen! Your sense of humor keeps me going through the lonely nights. Soon I'll get to laugh with you face-to-face, and I cannot wait for that! 😄",
-    "You know what's funny? How completely in love with you I am, despite the distance. The countdown timer on my phone, the way I check flights - yeah, that's how obsessed I am. Happy birthday to my favorite person to dream about being with! 🎉",
+    "You make me laugh so hard, even through a screen! Your sense of humor gets me through the long-distance nights. I can't wait to laugh with you face-to-face as soon as we can be together. 😄",
+    "Isn't it funny how we're totally in love despite the distance? The countdown on my phone and my flight searches are proof. Happy birthday to my favorite person to daydream about being with — see you in person as soon as possible! 🎉",
   ],
   memory: [
-    "I cherish every memory we've made, from our first video call to now. These moments keep me going. Soon we'll create new memories together in person - the kind we'll relive forever. 💫",
-    "Some of my favorite memories are those late-night calls where we just existed together. Every moment matters because it's us. And soon, we'll have memories of waking up together, which I cannot wait for. ❤️",
+    "I cherish every memory we've made, from our first video call to our late-night chats. Those long-distance moments keep me going. I look forward to making new, in-person memories with you as soon as we can. 💫",
+    "Some of my favorite memories are those nights we just existed together over the phone. Every moment matters because it's us, even when apart. I can't wait for the mornings we'll share in person as soon as possible. ❤️",
   ],
   future: [
-    "I dream about our future together - and it starts the moment we finally meet. I see us making up for lost time, creating adventures, and never being apart again. The countdown to being with you is everything. 🌟",
-    "Your dreams are my dreams. And my biggest dream right now? Closing this distance and building our life together in person. You give me hope for an amazing future, and it's coming soon. ✨",
+    "I dream about our future together — and it begins the moment we finally meet in person. I see us making up for lost time, creating adventures, and never being apart again. Let's make that future happen as soon as we can. 🌟",
+    "Your dreams are my dreams. My biggest wish right now is to close this distance and build our life together in person as soon as possible. You give me hope for an amazing future, and I can't wait to start it with you. ✨",
   ],
   beautiful: [
-    "You're beautiful inside and out. And I can't wait to see that beautiful smile in person, to look into your eyes without a screen between us. Soon, I promise. 🌹",
-    "You're most beautiful when you're being yourself - which I get to see even through the distance. But imagine how much more beautiful everything will be when we're finally together. Soon, my love. 💕",
+    "You're beautiful inside and out, and I can't wait to see that smile in person without a screen between us. I hope that happens as soon as we can be together. 🌹",
+    "You're most beautiful when you're yourself — which I get to see even from afar. Imagine how much more beautiful everything will be when we're finally together in person, as soon as possible. 💕",
   ],
 };
 
