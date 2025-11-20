@@ -79,7 +79,7 @@ export default {
       {
         emoji: '💕',
         title: 'Growing Together',
-        content: 'We\'ve built the most beautiful memories together - from late-night conversations to spontaneous adventures. You\'ve seen me at my lowest and lifted me up. You celebrate my wins like they\'re your own. Together, we\'ve grown into better versions of ourselves. That\'s the power of what we have.',
+        content: 'We\'ve built the most beautiful memories together - from late-night conversations to spontaneous adventures(soon 🤭). You\'ve seen me at my lowest and lifted me up. You celebrate my wins like they\'re your own. Together, we\'ve grown into better versions of ourselves. That\'s the power of what we have.',
         image: '🌈',
       },
       {
