@@ -19,7 +19,7 @@
         <div class="photo-section glass" v-if="showPhoto">
           <div class="photo-frame">
             <img 
-              src="/dist/img/girlfriend.jpeg" 
+              src="/img/girlfriend.jpeg" 
               alt="My Beautiful Nurlayla"
               class="girlfriend-photo"
               @error="handleImageError"
