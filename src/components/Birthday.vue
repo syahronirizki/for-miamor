@@ -58,8 +58,8 @@
         <div class="timeline-section glass">
           <h2>Our Beautiful Moments</h2>
           <div class="timeline">
-            <div v-for="(moment, index) in moments" :key="index" class="timeline-item" :class="{ active: index === activeMoment }">
-              <div class="timeline-dot" @click="activeMoment = index"></div>
+            <div v-for="(moment, index) in moments" :key="index" class="timeline-item" :class="{ active: index === activeMoment }" @click="toggleMoment(index)">
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <p class="timeline-title">{{ moment.title }}</p>
                 <p class="timeline-text">{{ moment.text }}</p>
@@ -80,7 +80,8 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
+import { createHeartExplosion } from '../utils/heartExplosion'
 
 export default {
   name: 'BirthdayCard',
@@ -89,6 +90,17 @@ export default {
     const girlfriendName = ref('Nurlayla Zain Capah')
     const showPhoto = ref(true)
     const activeMoment = ref(0)
+
+    const toggleMoment = (index) => {
+      activeMoment.value = index
+      // Trigger heart explosion on the timeline dot
+      nextTick(() => {
+        const dots = document.querySelectorAll('.timeline-dot')
+        if (dots[index]) {
+          createHeartExplosion(dots[index])
+        }
+      })
+    }
 
     const wishes = [
       {
@@ -167,6 +179,7 @@ export default {
       restart,
       printPage,
       handleImageError,
+      toggleMoment,
     }
   },
 }
@@ -593,6 +606,12 @@ export default {
   margin-bottom: 30px;
   position: relative;
   animation: slideUp 0.6s ease-out both;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
 }
 
 .timeline-item:nth-child(1) { animation-delay: 0.2s; }
@@ -611,7 +630,12 @@ export default {
   border-radius: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.timeline-dot:hover {
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .timeline-item.active .timeline-dot {
@@ -619,25 +643,41 @@ export default {
   border-color: white;
   transform: translateX(-50%) scale(1.4);
   box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+  animation: heartPulse 0.6s ease-out;
+}
+
+@keyframes heartPulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.5);
+  }
+  100% {
+    transform: translateX(-50%) scale(1.4);
+  }
 }
 
 .timeline-content {
   width: calc(50% - 40px);
   background: rgba(255, 255, 255, 0.08);
-  padding: 20px;
+  padding: 0 20px;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   margin-left: 40px;
   text-align: left;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0;
 }
 
 .timeline-item.active .timeline-content {
   max-height: 300px;
+  padding: 20px;
   background: rgba(255, 0, 110, 0.15);
   border-color: rgba(255, 0, 110, 0.3);
+  opacity: 1;
 }
 
 .timeline-title {

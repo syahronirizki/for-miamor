@@ -1,8 +1,10 @@
 <template>
   <div class="story-container">
+    <ScrollAlert v-if="showScrollAlert" :message="'📱 Scroll down to see navigation buttons and continue'" @close="showScrollAlert = false" />
+    
     <button class="btn-back" @click="$emit('back')">← Back</button>
 
-    <div class="story-content">
+    <div class="story-content" :class="{ 'has-nav': showNavigation }">
       <div class="story-header">
         <h2 class="gradient-text">✨ Our Beautiful Story ✨</h2>
       </div>
@@ -27,7 +29,7 @@
         <div class="progress-fill" :style="{ width: ((currentScene + 1) / scenes.length * 100) + '%' }"></div>
       </div>
 
-      <div class="scene-navigation">
+      <div class="scene-navigation" v-if="showNavigation">
         <button
           class="btn-nav btn-prev"
           @click="previousScene"
@@ -50,7 +52,7 @@
       </div>
 
       <button
-        v-if="currentScene === scenes.length - 1"
+        v-if="currentScene === scenes.length - 1 && showNavigation"
         class="btn-continue"
         @click="$emit('next')"
       >
@@ -61,13 +63,20 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import ScrollAlert from './ScrollAlert.vue'
 
 export default {
   name: 'StorySection',
+  components: {
+    ScrollAlert,
+  },
   emits: ['next', 'back'],
   setup() {
     const currentScene = ref(0)
+    const showScrollAlert = ref(true)
+    const showNavigation = ref(false)
+    let hideTimer = null
 
     const scenes = [
       {
@@ -96,6 +105,17 @@ export default {
       },
     ]
 
+    onMounted(() => {
+      // Show navigation after 2 seconds to prompt scrolling on mobile
+      hideTimer = setTimeout(() => {
+        showNavigation.value = true
+      }, 2000)
+
+      return () => {
+        if (hideTimer) clearTimeout(hideTimer)
+      }
+    })
+
     const nextScene = () => {
       if (currentScene.value < scenes.length - 1) {
         currentScene.value++
@@ -113,6 +133,8 @@ export default {
       scenes,
       nextScene,
       previousScene,
+      showScrollAlert,
+      showNavigation,
     }
   },
 }
@@ -156,6 +178,12 @@ export default {
   max-width: 700px;
   width: 100%;
   position: relative;
+  transition: transform 0.3s ease;
+}
+
+.story-content.has-nav {
+  transform: scale(0.9);
+  transform-origin: center top;
 }
 
 .story-header {

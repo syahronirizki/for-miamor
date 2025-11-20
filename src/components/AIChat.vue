@@ -1,8 +1,10 @@
 <template>
   <div class="chat-container">
+    <ScrollAlert v-if="showScrollAlert" :message="'📱 Scroll down to see chat and navigate'" @close="showScrollAlert = false" />
+    
     <button class="btn-back-chat" @click="$emit('back')">← Back</button>
 
-    <div class="chat-box glass">
+    <div class="chat-box glass" :class="{ 'has-nav': showNavigation }">
       <div class="chat-header">
         <h2>💬 AI Conversation</h2>
         <p class="subtitle">Let's chat and celebrate this beautiful day</p>
@@ -44,7 +46,7 @@
       </div>
     </div>
 
-    <button v-if="messages.length > 5" class="btn-birthday" @click="$emit('next')">
+    <button v-if="messages.length > 5 && showNavigation" class="btn-birthday" @click="$emit('next')">
       Go to Birthday Celebration 🎉
     </button>
   </div>
@@ -53,9 +55,13 @@
 <script>
 import { ref, nextTick } from 'vue'
 import { AIService } from '../services/aiService.js'
+import ScrollAlert from './ScrollAlert.vue'
 
 export default {
   name: 'AIChat',
+  components: {
+    ScrollAlert,
+  },
   emits: ['next', 'back'],
   setup() {
     const messages = ref([
@@ -67,12 +73,19 @@ export default {
     ])
     const isLoading = ref(false)
     const messagesContainer = ref(null)
+    const showScrollAlert = ref(true)
+    const showNavigation = ref(false)
     const questionOptions = ref([
       "Why do you love me?",
       "Tell me our story",
       "Make me laugh!",
       "What's your favorite memory with me?",
     ])
+    
+    // Show navigation after 2 seconds to prompt scrolling on mobile
+    setTimeout(() => {
+      showNavigation.value = true
+    }, 2000)
 
     const formatTime = (date) => {
       return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -174,6 +187,8 @@ export default {
       formatTime,
       messagesContainer,
       questionOptions,
+      showScrollAlert,
+      showNavigation,
     }
   },
 }
@@ -222,6 +237,12 @@ export default {
   min-height: 750px;
   max-height: 90vh;
   animation: fadeIn 0.6s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.chat-box.has-nav {
+  transform: scale(0.9);
+  transform-origin: center top;
 }
 
 .chat-header {
