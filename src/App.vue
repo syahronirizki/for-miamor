@@ -9,11 +9,12 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import Welcome from './components/Welcome.vue'
 import Story from './components/Story.vue'
 import AIChat from './components/AIChat.vue'
 import Birthday from './components/Birthday.vue'
+import { createHeartExplosion } from './utils/heartExplosion'
 
 export default {
   name: 'App',
@@ -41,6 +42,24 @@ export default {
         currentStep.value--
       }
     }
+
+    const handleGlobalClick = (event) => {
+      // Random chance to trigger heart explosion on any click (20% chance)
+      // This adds a fun, surprise element throughout the app
+      if (Math.random() < 0.2 && event.target !== document.body && event.target !== document.documentElement) {
+        createHeartExplosion(event.target)
+      }
+    }
+
+    onMounted(() => {
+      // Add global click listener for heart explosions anywhere
+      document.addEventListener('click', handleGlobalClick)
+    })
+
+    onUnmounted(() => {
+      // Clean up event listener
+      document.removeEventListener('click', handleGlobalClick)
+    })
     
     return {
       currentComponent,

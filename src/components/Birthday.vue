@@ -17,7 +17,7 @@
 
         <!-- Photo section -->
         <div class="photo-section glass" v-if="showPhoto">
-          <div class="photo-frame">
+          <div class="photo-frame" @click="triggerImageHeartExplosion">
             <img 
               src="/img/girlfriend.jpeg" 
               alt="My Beautiful Nurlayla"
@@ -161,6 +161,10 @@ export default {
       showPhoto.value = false
     }
 
+    const triggerImageHeartExplosion = (event) => {
+      createHeartExplosion(event.currentTarget)
+    }
+
     onMounted(() => {
       // Auto-cycle through moments
       const momentInterval = setInterval(() => {
@@ -180,6 +184,7 @@ export default {
       printPage,
       handleImageError,
       toggleMoment,
+      triggerImageHeartExplosion,
     }
   },
 }
@@ -380,6 +385,17 @@ export default {
   border: 4px solid white;
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
   aspect-ratio: 3/4;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-frame:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 70px rgba(102, 126, 234, 0.5);
+}
+
+.photo-frame:active {
+  transform: scale(0.98);
 }
 
 .girlfriend-photo {
