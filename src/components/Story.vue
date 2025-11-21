@@ -288,7 +288,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   gap: 15px;
 }
 
@@ -430,7 +430,7 @@ export default {
   }
 
   .btn-continue {
-    padding: 13px;
+    padding: 5px;
     font-size: 1rem;
     border-radius: 20px;
   }
@@ -524,7 +524,7 @@ export default {
   }
 
   .btn-continue {
-    padding: 11px;
+    padding: 5px;
     font-size: 0.9rem;
     border-radius: 18px;
   }
@@ -586,7 +586,7 @@ export default {
   }
 
   .btn-continue {
-    padding: 12px;
+    padding: 5px;
     font-size: 0.98rem;
   }
 }
@@ -675,7 +675,7 @@ export default {
   }
 
   .btn-continue {
-    padding: 8px;
+    padding: 5px;
     font-size: 0.8rem;
     border-radius: 15px;
   }

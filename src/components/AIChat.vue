@@ -231,13 +231,15 @@ export default {
 .chat-box {
   width: 100%;
   max-width: 800px;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  min-height: 750px;
+  height: 75vh;
   max-height: 90vh;
   animation: fadeIn 0.6s ease-out;
   transition: transform 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .chat-box.has-nav {
@@ -495,11 +497,11 @@ export default {
 }
 
 .btn-birthday {
-  margin-top: 20px;
+  margin-top: 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: 2px solid white;
-  padding: 15px 40px;
+  padding: 8px 24px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 1.1rem;
@@ -543,22 +545,26 @@ export default {
 
   .chat-box {
     min-height: auto;
-    max-height: 90vh;
-    padding: 18px;
+    height: 70vh;
+    max-height: 75vh;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .chat-header {
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .chat-header h2 {
     font-size: 1.5rem;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
 
   .chat-header .subtitle {
     font-size: 0.9rem;
+    display: none;
   }
 
   .messages-container {
@@ -617,8 +623,8 @@ export default {
   }
 
   .btn-birthday {
-    margin-top: 15px;
-    padding: 12px 28px;
+    margin-top: 0;
+    padding: 7px 18px;
     font-size: 0.95rem;
   }
 }
@@ -634,22 +640,26 @@ export default {
 
   .chat-box {
     min-height: auto;
-    max-height: 88vh;
-    padding: 14px;
+    height: 68vh;
+    max-height: 72vh;
+    padding: 4px;
     max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .chat-header {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .chat-header h2 {
     font-size: 1.15rem;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 
   .chat-header .subtitle {
     font-size: 0.78rem;
+    display: none;
   }
 
   .messages-container {
@@ -716,8 +726,8 @@ export default {
   }
 
   .btn-birthday {
-    margin-top: 12px;
-    padding: 10px 20px;
+    margin-top: 0;
+    padding: 6px 12px;
     font-size: 0.85rem;
   }
 }
@@ -733,21 +743,25 @@ export default {
 
   .chat-box {
     min-height: auto;
-    max-height: 90vh;
-    padding: 17px;
+    height: 70vh;
+    max-height: 74vh;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .chat-header {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   .chat-header h2 {
     font-size: 1.35rem;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   .chat-header .subtitle {
     font-size: 0.88rem;
+    display: none;
   }
 
   .messages-container {
@@ -788,7 +802,8 @@ export default {
   }
 
   .btn-birthday {
-    padding: 12px 30px;
+    margin-top: 0;
+    padding: 7px 20px;
     font-size: 0.93rem;
   }
 }
@@ -871,7 +886,7 @@ export default {
   .btn-birthday {
     padding: 9px 18px;
     font-size: 0.78rem;
-    margin-top: 8px;
+    margin-top: 5px;
   }
 }
 </style>
